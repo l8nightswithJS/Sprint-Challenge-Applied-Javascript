@@ -28,7 +28,7 @@ function ArticleCard(arr) {
     const img = document.createElement('img');
     const authorsName = document.createElement('span');
 
-    headlineEl.textContent = arr.headline;
+    headlineEl.textContent = arr.headlines;
     img.src = arr.authorPhoto;
     authorsName.textContent = (`"By"${arr.authorName}`);
 
@@ -37,11 +37,12 @@ function ArticleCard(arr) {
     authorDiv.classList.add('author');
     imgContainer.classList.add('img-container');
 
-    newCard.appendChild(headline);
+    newCard.appendChild(headlineEl);
     newCard.appendChild(authorDiv);
     authorDiv.appendChild(imgContainer);
     imgContainer.appendChild(img);
     authorDiv.appendChild(authorsName);
+    cardContainer.appendChild(newCard);
 
     return newCard;
 
