@@ -30,7 +30,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+The Dom is the main document, this is where the elements are held, and where you can see the element hierarchy and tree, you can add things to the DOM using the .document method.
+
 2. What is an event?
+
+An Event is a function or piece of code that is ran when the user activates an event handler wether it be through click, mouseover, or onload and many more.
 
 3. What is an event listener?
 

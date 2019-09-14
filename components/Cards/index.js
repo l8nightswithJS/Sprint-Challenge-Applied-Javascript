@@ -17,3 +17,29 @@
 // </div>
 //
 // Create a card for each of the articles and add the card to the DOM.
+function ArticleCard(headline, imgSrc, author) {
+    const newCard = document.createElement('div');
+    const headlineEl = document.createElement('div');
+    const authorDiv = document.createElement('div');
+    const imgContainer = document.createElement('div');
+    const img = document.createElement('img');
+    const authorsName = document.createElement('span');
+
+    headlineEl.textContent = headline;
+    img.src = imgSrc;
+    authorsName.textContent = (`"By"${author}`);
+
+    newCard.classList.add('card');
+    headlineEl.classList.add('headline');
+    authorDiv.classList.add('author');
+    imgContainer.classList.add('img-container');
+
+    newCard.appendChild(headline);
+    newCard.appendChild(authorDiv);
+    authorDiv.appendChild(imgContainer);
+    imgContainer.appendChild(img);
+    authorDiv.appendChild(authorsName);
+
+    
+
+}
