@@ -36,11 +36,18 @@ The Dom is the main document, this is where the elements are held, and where you
 
 An Event is a function or piece of code that is ran when the user activates an event handler wether it be through click, mouseover, or onload and many more.
 
-3. What is an event listener?
+3. What is an event listener? 
+
+An Event Listener attaches handlers to specific elements in the DOM, this is done with the addEventListener() method, when these handlers are activated they run pre defined code. 
+
 
 4. Why would we convert a NodeList into an Array?
 
+So that we may take full advantage of some of the newer ES6 methods because some will only take arrays to chnge we can use the array.from() method.
+
 5. What is a component?
+
+Components in javascript allow us to create code for elements that encapsulate html, css, and javascipt, all within the component it is useful so that we can change element easier with less code.
 
 ### Git Set up
 

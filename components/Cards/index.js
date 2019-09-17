@@ -22,13 +22,14 @@ const cardContainer = document.querySelector('.cards-container');
 
 function ArticleCard(arr) {
     const newCard = document.createElement('div');
-    const headlineEl = document.createElement('div');
+    const headlineEl = document.createElement('h1');
     const authorDiv = document.createElement('div');
+    // const headlineText = document.createElement
     const imgContainer = document.createElement('div');
     const img = document.createElement('img');
     const authorsName = document.createElement('span');
 
-    headlineEl.textContent = arr.headlines;
+    headlineEl.textContent = arr.headline;
     img.src = arr.authorPhoto;
     authorsName.textContent = (`"By"${arr.authorName}`);
 
